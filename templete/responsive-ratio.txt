@@ -1,0 +1,3 @@
+Large device-992 to up
+small device-600 to down
+
