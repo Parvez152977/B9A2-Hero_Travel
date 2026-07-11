@@ -47,16 +47,35 @@
     <main id="site-main">
         <section class="hero">
             <h1 class="hero-title">Explore Your Travel </h1>
-            <p class="hero-sub"> Dolor sit amet
-                consectetur. suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu
-                phasellus.
+            <p class="hero-sub">Designed for the modern explorer. Access premium destinations, expert recommendations,
+                and seamless travel planning—all
+                tailored to you.
             </p>
             <div class="travel-filters">
                 <div class="filter-item"><span><input type="text" placeholder="Where go"></span></div>
                 <div class="filter-divider"></div>
-                <div class="filter-item"><span><input type="text" placeholder="When"></span></div>
+                <div id="travel-date" class="filter-item">
+                    <div>
+                        <span class="date-placeholder"><label for="travel-date">When</label></span>
+
+                    </div>
+                    <div><span><input type="date" /></span></div>
+                </div>
                 <div class="filter-divider"></div>
-                <div class="filter-item"><span><input type="text" placeholder="Select Type"></span>
+                <div id="travel-type" class="filter-item"><div><span><label for="travel-type">Select Travel Type</label></span></div>
+                <div><span>
+                    <select>
+                    <option value="" disabled selected></option>
+                    <option value="adventure">Adventure</option>
+                    <option value="beach">Beach & Relaxation</option>
+                    <option value="city">City Break</option>
+                    <option value="culture">Culture & History</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="family">Family</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="wildlife">Wildlife & Nature</option>
+                </select></span></div>
+                        
                 </div>
                 <div class="btn-find">Find Now</div>
             </div>

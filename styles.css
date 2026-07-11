@@ -171,6 +171,7 @@ body {
 
 
 .hero-title {
+    font-size: 2.8rem;
     font-weight: 700;
     color: #0b1e33;
     margin-bottom: .6rem;
@@ -183,32 +184,21 @@ body {
     text-align: center;
 }
 
-.hero-title i {
-    color: #2a7de1;
-    font-size: 2 rem;
-    margin-left: .2rem;
-    opacity: .9
-}
-
 .hero-sub {
-    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #033366;
     max-width: 680px;
     line-height: 1.6;
     margin-bottom: 2.8rem;
-    font-weight: 400;
-    background: rgba(255, 255, 255, .5);
+    font-weight: 500;
     padding: .4rem 1.2rem;
     border-radius: 60px;
     display: inline-block;
     backdrop-filter: blur(4px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .02);
-    border: 1px solid rgba(255, 255, 255, .7)
+    text-align: center;
 }
 
-.hero-sub {
-    color: #2a7de1;
-    margin-right: .4rem
-}
 
 .travel-filters {
     position: relative;
@@ -242,6 +232,14 @@ body {
     width: 100%;
 }
 
+#travel-date, #travel-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#travel-type,#travel-date,
 .filter-item span input {
     width: 100%;
     background: #fff;
@@ -254,18 +252,21 @@ body {
     outline: none;
     transition: border-color .2s;
 }
+#travel-date [type="date"] {
+    height: 50px;
+    width: 50px;
+}
+#travel-type select{
+    height: 30px;
+    width: 30px;
+    border:none;
+    background: none;
+}
 
 .filter-item span input:focus {
     border-color: #2a7de1;
 }
 
-/* .filter-divider {
-    width: 1px;
-    height: 30px;
-    background: #dce4ec;
-    margin: 0 .2rem;
-    flex-shrink: 0
-} */
 
 .btn-find {
     background: #1a5fb4;
