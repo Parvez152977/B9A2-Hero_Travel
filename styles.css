@@ -46,7 +46,11 @@ body {
 
 .site-title {
     font-size: 1.8rem;
-    color: #007bff;
+    color: black;
+}
+
+.title-highlight {
+    color: orange;
 }
 
 /* Navigation */
@@ -232,14 +236,16 @@ body {
     width: 100%;
 }
 
-#travel-date, #travel-type {
+#travel-date,
+#travel-type {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-#travel-type,#travel-date,
+#travel-type,
+#travel-date,
 .filter-item span input {
     width: 100%;
     background: #fff;
@@ -252,14 +258,16 @@ body {
     outline: none;
     transition: border-color .2s;
 }
+
 #travel-date [type="date"] {
     height: 50px;
     width: 50px;
 }
-#travel-type select{
+
+#travel-type select {
     height: 30px;
     width: 30px;
-    border:none;
+    border: none;
     background: none;
 }
 
@@ -301,6 +309,59 @@ body {
 
 .btn-find:hover {
     transform: translateX(3px)
+}
+
+
+/* Footer Section */
+.site-footer {
+    background-color: #c8dcdd;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-description p {
+    max-width: 25rem;
+    font-size: 1rem;
+    color: #333;
+    margin: auto;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin:1rem;
+}
+
+.footer-social img {
+    height: 30px;
+    width: auto;
+}
+
+.footer-separator {
+    border: none;
+    border-top: 1px solid #2c343b;
+    margin: 1rem 0;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #6c757d;
 }
 
 /* Responsive
